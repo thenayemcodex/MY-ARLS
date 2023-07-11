@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">My ARLS</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="author">Md Nayem Sheikh</string>
+    <string name="previous">Previous</string>
+    <string name="userHint">Enter Username</string>
+    <string name="passHint">Enter Password</string>
+    <string name="cpassHint">Confirm Password</string>
+    <string name="gmailHint">Enter Gmail</string>
+    <string name="forgetPass">Forget Password</string>
+    <string name="warn1">Chose a strong password at least 8 character.</string>
+    <string name="logBtn">Log In</string>
+    <string name="signBtn">Sign In</string>
+    <string name="saveBtn">Save</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="profileImgDes">User Profile Picture</string>
+    <string name="signInt">Do Not Have An Account ? > Sign In</string>
+    <string name="logInt">Already Have An Account > Log In</string>
+    <string name="wlcm">Welcome Back</string>
+    <string name="reg">Register Here</string>
+    <string name="forget">Reset Password</string>
+    <string name="otp">Enter OTP</string>
+    <string name="reset">Reset</string>
+    <string name="enterPass">Enter password to Log In</string>
+    <string name="resetOpt">Check Your Mail For OTP</string>
+    <string name="title_activity_home_screen">HomeScreenActivity</string>
+    <string name="dummy_button">Profile Page</string>
+    <string name="navLabel">Navigation Panel</string>
+    <string name="home">Dashboard</string>
+    <string name="name">Name here</string>
+    <string name="edit">Edit</string>
+    <string name="see_more">See more details</string>
+    <string name="see_bale">See Bales</string>
+    <string name="add_cart">Add to Cart</string>
+    <string name="secCheck">Security Check !</string>
+
+    <!--    navigation strings-->
+    <string name="navLabelHome">Home > Nav </string>
+    <string name="navLabelMaterials">Home > Nav > Materials</string>
+    <string name="navLabelCart">Home > Nav > Materials > Wish List</string>
+
+    <!--    profile widgets-->
+    <string name="u_name">Md Nayem Sheikh</string>
+    <string name="full_name">Your FullName</string>
+    <string name="eid">Emirates ID</string>
+    <string name="u_nationality">Owner Nationality</string>
+    <string name="reference">Reference [someone trusted]</string>
+    <string name="d_license">Driving License [Optional]</string>
+    <string name="b_name">Business name</string>
+    <string name="b_city">City</string>
+    <string name="b_area">Area</string>
+    <string name="b_street">Street no</string>
+    <string name="b_type">Business category</string>
+    <string name="b_structure">Solo / LLC / Corporate</string>
+    <string name="share_holder">Share holder [Optional]</string>
+    <string name="b_license">License No:</string>
+
+
+    <!--    Materials name-->
+    <string name="pet_white">White PET</string>
+    <string name="pet_white_des">All kind of transparent bottle and plastic such as water bottle, fruit juice bottles etc.</string>
+
+    <string name="pet_green">Green PET</string>
+    <string name="pet_green_desc">All kind of soft drinks like Dew, 7up, Spite etc</string>
+
+    <string name="m_pp">Mix PP </string>
+    <string name="m_pp_desc">All kind of low density plastics like yoghurt bottle, plastic cups etc </string>
+
+    <string name="pp_tokri">PP Tokri</string>
+    <string name="pp_tokri_desc">All kine of Tokri that used to carry goods such as fruit crate, vegetable crate etc.</string>
+
+    <string name="color_hd">Color HD</string>
+    <string name="color_hd_desc">All kind of high density plastic and all color mix except white. such as detargent bottle, bathroom cleaner bottle etc.</string>
+
+    <string name="white_hd">White HD</string>
+    <string name="white_hd_desc">All kind of high density plastic which is only white color. such as detargent bottle, bathroom cleaner bottle etc.</string>
+
+    <string name="film">Mix Film</string>
+    <string name="film_desc">All kind of polythene and wrapping packages are in this category such as food packet, carry bag etc</string>
+
+    <string name="occ_a">OCC A Grade</string>
+    <string name="occ_a_desc">All kind of carton box and other carton collected from market and hotels such as fruit box, beverage good packages etc </string>
+
+    <string name="occ_b">OCC B Grade</string>
+    <string name="occ_b_desc">All kind of carton box and other carton collected from daily recovery such as fruit box, beverage good packages etc </string>
+
+    <string name="m_paper">Mix Paper</string>
+    <string name="m_paper_desc">All kind of Paper that used in school/collage and other offices.</string>
+
+    <string name="steel">Metal Loose</string>
+    <string name="steel_desc">All kind of Steel and Metals are in this category</string>
+
+    <string name="a_can">Aluminium Can</string>
+    <string name="a_can_desc">All kind of Aluminium can such as soft driks, alcohol, coke etc</string>
+
+    <string name="a_pot">Aluminium Pot</string>
+    <string name="a_pot_desc">All kind of Aluminium pot such as fry pan, cooker, other daily used pots that made by Aluminium.</string>
+
+    <string name="e_waste">Electrical Waste</string>
+    <string name="e_waste_desc">All kind of Electrical waste such as used computer,mobile, pc, keyboard, woven etc.</string>
+
+    <string name="pc_bottle">PC Bottles</string>
+    <string name="pc_bottle_desc">All kind of PC water bottles that are made with high density plastic</string>
+
+    <string name="remove">Remove</string>
+    <string name="transparent_bottle">transparent bottle</string>
+
+    <string name="times">Time will be shown here</string>
+
+
+    <string name="demoCurrentDate">September</string>
+    <string name="aed"> AED</string>
+    <string name="your_conditions">Your conditions</string>
+    <string name="process_my_bid">Process my bid</string>
+    <string name="event">EventWidget</string>
+    <string name="rate">rate shows herer</string>
+    <string name="additional">additional here</string>
+    <string name="cancel_my_bids">Cancel My Bids</string>
+
+
+
+
+
+    <string-array name="materials_names_array">
+        <item>White Pet</item>
+        <item>Green Pet</item>
+        <item>Mix PP</item>
+        <item>PP Tokri</item>
+        <item>Color HD</item>
+        <item>White HD</item>
+        <item>Mix Film</item>
+        <item>OCC A Grade</item>
+        <item>OCC B Grade</item>
+        <item>Mix Paper</item>
+        <item>Steel</item>
+        <item>Aluminium Can</item>
+        <item>Aluminium Pot</item>
+        <item>Electrical Waste</item>
+        <item>PC Bottle</item>
+    </string-array>
+
+    <string-array name="materials_names_first_word_array">
+        <item>White</item>
+        <item>Green</item>
+        <item>Mix</item>
+        <item>PP</item>
+        <item>Color</item>
+        <item>White</item>
+        <item>Mix</item>
+        <item>OCC A</item>
+        <item>OCC B</item>
+        <item>Mix</item>
+        <item>Steel</item>
+        <item>Can</item>
+        <item>Pot</item>
+        <item>Electrical</item>
+        <item>PC</item>
+    </string-array>
+
+    <string-array name="materials_names_shortcut_array">
+        <item>wpd;lfgkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjdaldajfg;adfgoaepfkladjfgdajgpo[ierugpowergdfskjpgodapgpoerjgdkl;fgjd[poguerpogtjkpodafijgpadkg;dapgjpaegjkaprgaodrjgopdigpodajgpadojgpd</item>
+        <item>gp</item>
+        <item>mpp</item>
+        <item>ppt</item>
+        <item>chd</item>
+        <item>whd</item>
+        <item>fm</item>
+        <item>oca</item>
+        <item>ocb</item>
+        <item>pr</item>
+        <item>sl</item>
+        <item>acn</item>
+        <item>apt</item>
+        <item>ew</item>
+        <item>pc</item>
+    </string-array>
+
+
+</resources>

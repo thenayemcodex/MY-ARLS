@@ -1,0 +1,1547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BidOnMaterials">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/my_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/my_bg"
+                            android:contentDescription="@string/profileImgDes"
+                            app:srcCompat="@drawable/pet_white1" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/pet_white"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/wp_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/demoCurrentDate"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/wp_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+                    <EditText
+                        android:id="@+id/wp_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="wp"
+                    android:text="@string/process_my_bid"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/my_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/my_bg"
+                            android:contentDescription="@string/profileImgDes"
+                            app:srcCompat="@drawable/pet_green" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/pet_green"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gp_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/demoCurrentDate"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/gp_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/gp_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="gp"
+                    android:text="@string/process_my_bid" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/my_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/my_bg"
+                            android:contentDescription="@string/profileImgDes"
+                            app:srcCompat="@drawable/mix_pp_loose" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/m_pp"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mpp_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/demoCurrentDate"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/mpp_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/mpp_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="mpp"
+                    android:text="@string/process_my_bid" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/my_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/my_bg"
+                            android:contentDescription="@string/profileImgDes"
+                            app:srcCompat="@drawable/tokri_loose" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/pp_tokri"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/ppt_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/demoCurrentDate"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/ppt_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/ppt_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="ppt"
+                    android:text="@string/process_my_bid" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/my_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/my_bg"
+                            android:contentDescription="@string/profileImgDes"
+                            app:srcCompat="@drawable/color_hd_loose" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/color_hd"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/chd_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/demoCurrentDate"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/chd_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/chd_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="chd"
+                    android:text="@string/process_my_bid" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/my_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/my_bg"
+                            android:contentDescription="@string/profileImgDes"
+                            app:srcCompat="@drawable/white_hd_loose" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/white_hd"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/whd_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/demoCurrentDate"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/whd_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/whd_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="whd"
+                    android:text="@string/process_my_bid" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/my_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="75dp"
+                            android:background="@drawable/my_bg"
+                            android:contentDescription="@string/profileImgDes"
+                            app:srcCompat="@drawable/film_loose" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/film"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/fm_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/demoCurrentDate"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/fm_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/fm_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="fm"
+                    android:text="@string/process_my_bid" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/my_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="115dp"
+                            android:layout_height="85dp"
+                            android:background="@drawable/my_bg"
+                            android:contentDescription="@string/profileImgDes"
+                            app:srcCompat="@drawable/occ_a_loose"
+                            tools:ignore="TooManyViews" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/occ_a"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/oca_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/demoCurrentDate"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    tools:ignore="TooManyViews">
+
+                    <EditText
+                        android:id="@+id/oca_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/oca_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="oca"
+                    android:text="@string/process_my_bid" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/my_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="67dp"
+                            android:background="@drawable/my_bg"
+                            android:contentDescription="@string/profileImgDes"
+                            app:srcCompat="@drawable/occ_b_loose" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/occ_b"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ocb_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:text="@string/demoCurrentDate"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/ocb_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/ocb_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="ocb"
+                    android:text="@string/process_my_bid" />
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_bg"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        app:cardCornerRadius="50dp"
+                        android:layout_height="60dp" >
+
+                        <ImageView
+                            android:layout_width="115dp"
+                            android:layout_height="85dp"
+                            android:background="@drawable/my_bg"
+                            app:srcCompat="@drawable/paper_loose"
+                            android:contentDescription="@string/profileImgDes" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/m_paper"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/pr_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/demoCurrentDate"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/pr_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/pr_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="pr"
+                    android:text="@string/process_my_bid"/>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_bg"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        app:cardCornerRadius="50dp"
+                        android:layout_height="60dp" >
+
+                        <ImageView
+                            android:id="@+id/sl_image"
+                            android:layout_width="120dp"
+                            android:layout_height="90dp"
+                            android:background="@drawable/my_bg"
+                            app:srcCompat="@drawable/metal_loose"
+                            android:contentDescription="@string/profileImgDes" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/steel"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/sl_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/demoCurrentDate"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/sl_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/sl_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="sl"
+                    android:text="@string/process_my_bid"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_bg"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        app:cardCornerRadius="50dp"
+                        android:layout_height="60dp" >
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="85dp"
+                            android:background="@drawable/my_bg"
+                            app:srcCompat="@drawable/a_can_loose"
+                            android:contentDescription="@string/profileImgDes" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a_can"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/acn_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/demoCurrentDate"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/acn_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+                    <EditText
+                        android:id="@+id/acn_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="acn"
+                    android:text="@string/process_my_bid"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_bg"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        app:cardCornerRadius="60dp"
+                        android:layout_height="60dp" >
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginStart="-15dp"
+                            android:background="@drawable/my_bg"
+                            app:srcCompat="@drawable/a_pot"
+                            android:contentDescription="@string/profileImgDes" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a_pot"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/apt_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/demoCurrentDate"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/apt_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/apt_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="apt"
+                    android:text="@string/process_my_bid"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_bg"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        app:cardCornerRadius="50dp"
+                        android:layout_height="60dp" >
+
+                        <ImageView
+                            android:layout_width="115dp"
+                            android:layout_height="75dp"
+                            android:background="@drawable/my_bg"
+                            app:srcCompat="@drawable/e_waste"
+                            android:contentDescription="@string/profileImgDes" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/e_waste"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/ew_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/demoCurrentDate"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/ew_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/ew_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="ew"
+                    android:text="@string/process_my_bid"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_bg"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        app:cardCornerRadius="50dp"
+                        android:layout_height="60dp" >
+
+                        <ImageView
+                            android:layout_width="115dp"
+                            android:layout_height="85dp"
+                            android:background="@drawable/my_bg"
+                            app:srcCompat="@drawable/pc_bottle"
+                            android:contentDescription="@string/profileImgDes" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pc_bottle"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/pc_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/demoCurrentDate"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kal"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/pc_aed"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/aed"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/pc_additional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:background="@drawable/bid_edit_shape"
+                        android:hint="@string/your_conditions"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textColor="@color/teal_200"
+                        android:textColorHint="@color/black_overlay"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="processMyBIds"
+                    android:tag="pc"
+                    android:text="@string/process_my_bid"/>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

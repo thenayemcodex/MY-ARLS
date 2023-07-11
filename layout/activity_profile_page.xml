@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        android:background="@drawable/b2"
+        tools:layout_editor_absoluteY="36dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/profileImgDes"
+                    app:srcCompat="@drawable/profile"
+                    tools:ignore="ImageContrastCheck" />
+
+                <EditText
+                    android:id="@+id/fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:fontFamily="@font/kal"
+                    android:text="@string/u_name"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    android:gravity="center"
+                    android:background="@drawable/profile_shape"
+                    android:hint="@string/full_name"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp" />
+
+                <EditText
+                    android:id="@+id/user_eid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/eid"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/user_nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/u_nationality"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/reference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/reference"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/owner_driving_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/d_license"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/business_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/b_name"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/business_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/b_city"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/business_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/b_area"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    tools:ignore="TextContrastCheck" />
+                <EditText
+                    android:id="@+id/business_street"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/b_street"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp" />
+                <EditText
+                    android:id="@+id/business_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/b_type"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp" />
+                <EditText
+                    android:id="@+id/business_structure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/b_structure"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp" />
+                <EditText
+                    android:id="@+id/share_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/share_holder"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp" />
+                <EditText
+                    android:id="@+id/business_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/b_license"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="20dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:contentDescription="@string/profileImgDes"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:onClick="updateProfileDetails"
+                        app:srcCompat="@drawable/update" />
+
+                    <ImageView
+                        android:id="@+id/saveBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:contentDescription="@string/profileImgDes"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:visibility="gone"
+                        android:onClick="saveButton"
+                        app:srcCompat="@drawable/save" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:contentDescription="@string/profileImgDes"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:onClick="signOutBtn"
+                        app:srcCompat="@drawable/sign_out" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

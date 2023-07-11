@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/log_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/profileImgDes"
+            app:srcCompat="@drawable/profile"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/wlcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/titalic"
+            android:text="@string/wlcm"
+            android:textColor="@color/purple_700"
+            android:textSize="45sp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/enterUser"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/userHint"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:text="admin"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/teal_200"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/enterPass"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:background="@drawable/shape"
+            android:padding="10dp"
+            android:ems="10"
+            android:text="a"
+            android:hint="@string/passHint"
+            android:inputType="textPassword"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/teal_200"
+            tools:ignore="TextContrastCheck" />
+
+
+        <TextView
+            android:id="@+id/forgerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/forgetPass"
+            android:textColor="#DD2C00"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/logButton"
+            android:layout_width="178dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="20dp"
+            android:onClick="loginButtonPressed"
+            android:text="@string/logBtn" />
+
+        <TextView
+            android:id="@+id/logInt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:onClick="registrationPage"
+            android:text="@string/signInt"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

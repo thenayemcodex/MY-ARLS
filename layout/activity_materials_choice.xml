@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaterialsChoice">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/b2"
+        android:contentDescription="@string/home"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pet_white"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/pet_white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/wp_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pet_white1"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:minHeight="48dp"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="wp"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="addToCardButton"
+                            android:tag="wp"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pet_green"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/pet_green"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/gp_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pet_green1"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="gp"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:onClick="addToCardButton"
+                            android:tag="gp"
+                            android:text="@string/add_cart"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mix_pp_loose"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/m_pp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/mpp_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mix_pp_bale"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="mpp"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="addToCardButton"
+                            android:tag="mpp"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tokri_loose"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/pp_tokri"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/ppt_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tokri_loose"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="ppt"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="addToCardButton"
+                            android:tag="ppt"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/color_hd_loose"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/color_hd"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/chd_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/color_hd"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="chd"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="addToCardButton"
+                            android:tag="chd"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/white_hd_loose"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/white_hd"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/whd_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/white_hd_bale"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="whd"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="addToCardButton"
+                            android:tag="whd"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/film_bale"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/film"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/fm_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/film_bale"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="fm"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="addToCardButton"
+                            android:tag="fm"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/occ_a_loose"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/occ_a"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/oca_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/occ_a_bale"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="oca"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="addToCardButton"
+                            android:tag="oca"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                tools:ignore="TooManyViews">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/occ_b_loose"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/occ_b"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/ocb_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/occ_b_loose"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="ocb"
+                            android:gravity="center"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="addToCardButton"
+                            android:tag="ocb"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/paper"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/m_paper"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/pr_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/paper_balr"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="pr"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="addToCardButton"
+                            android:tag="pr"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/metal_loose"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/steel"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/steel"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/metal_loose"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="sl"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="addToCardButton"
+                            android:tag="sl"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/a_can_loose"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/a_can"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/acn_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/a_can_bale"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="acn"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:onClick="addToCardButton"
+                            android:tag="acn"
+                            android:layout_weight="1"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/a_pot"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/a_pot"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/apt_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/a_pot1"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="apt"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="addToCardButton"
+                            android:tag="apt"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/e_waste"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/e_waste"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/ew_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/e_waste"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="ew"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:onClick="addToCardButton"
+                            android:tag="ew"
+                            android:layout_weight="1"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/black"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pc_bottle"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/times"
+                        android:text="@string/pc_bottle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pet_white_des"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#757575" />
+
+                    <!--Invisible assets-->
+                    <ImageView
+                        android:id="@+id/pc_bale"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/radius"
+                        android:contentDescription="@string/profileImgDes"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pc_bottle"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="seeMoreDetailButton"
+                            android:tag="pc"
+                            android:text="@string/see_bale"
+                            android:textColor="@color/teal_200"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:onClick="addToCardButton"
+                            android:tag="pc"
+                            android:background="@drawable/my_bg"
+                            android:gravity="center"
+                            android:text="@string/add_cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

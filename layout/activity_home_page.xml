@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/home"
+        tools:layout_editor_absoluteX="-16dp"
+        android:background="@drawable/b2"
+        tools:layout_editor_absoluteY="198dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                tools:ignore="UselessParent">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:cardBackgroundColor="#50ffffff"
+                    app:cardCornerRadius="15dp">
+
+
+                    <ImageView
+                        android:layout_width="500dp"
+                        android:src="@drawable/award"
+                        android:layout_marginStart="-50dp"
+                        android:layout_height="250dp"
+                        android:contentDescription="@string/event" />
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="@color/wishBg"
+                    android:layout_height="wrap_content"
+
+                    app:cardCornerRadius="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/navLabel"
+                        android:fontFamily="@font/kal"
+                        android:textSize="16sp"
+                        android:textColor="@color/light_blue_900"
+                        android:letterSpacing=".2"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/profileImgDes"
+                        android:onClick="myBusinessBtn"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/my_business"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <ImageView
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="myWishList"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/my_wishlist" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:padding="-20dp"
+                        android:onClick="shotMaterialsList"
+                        android:contentDescription="@string/profileImgDes"
+                        app:srcCompat="@drawable/materials" />
+
+                    <ImageView
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:padding="-20dp"
+                        android:onClick="showMyPurchase"
+                        android:contentDescription="@string/profileImgDes"
+                        app:srcCompat="@drawable/my_purchases" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/button5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        android:onClick="showMySales"
+                        app:srcCompat="@drawable/my_sales" />
+
+                    <ImageView
+                        android:id="@+id/button6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="showMyPendingBids"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/my_bids" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/button7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="bidOnMaterials"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/bid_on_materials"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageView
+                        android:id="@+id/button8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="showMyVehicles"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/my_vehicles"
+                        tools:ignore="ImageContrastCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/button9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="showMyWallet"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/my_wallet" />
+
+                    <ImageView
+                        android:id="@+id/button10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="showPaymentToken"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/payment_token" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/button11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="showMyPendingOrders"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/pending_orders" />
+
+                    <ImageView
+                        android:id="@+id/button12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="showMyComplains"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/report_a_complain" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/button13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="showReturnMaterials"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/return_materials" />
+
+                    <ImageView
+                        android:id="@+id/button14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="showStockVisiting"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/stock_visit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/button15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="showReviewPage"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/review" />
+
+                    <ImageView
+                        android:id="@+id/button16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="showDonationPage"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/donate" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/button17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="showDevelopersContact"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/dev_contact" />
+
+                    <ImageView
+                        android:id="@+id/button18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="showAboutPage"
+                        android:contentDescription="@string/profileImgDes"
+                        android:padding="-20dp"
+                        app:srcCompat="@drawable/about" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
